@@ -5,7 +5,6 @@ $id = $_GET['id'];
 
 $result = mysqli_query($mysqli, "SELECT * FROM usuariosdb WHERE id = $id");
 
-// Fetch the next row of a result set as an associative array
 $resultData = mysqli_fetch_assoc($result);
 
 $nome  = $resultData['nome'];
